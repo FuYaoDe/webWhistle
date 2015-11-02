@@ -15,11 +15,11 @@ app.get('/', function (req, res) {
   console.log(req.query.status);
   var status = req.query.status;
   if(status == "ok"){
-    led.setColor(0,0,255);
+    led.setColor(255,255,255);
   }else if(status == "fail"){
-    led.setColor(255,0,0);
+    led.setColor(255,255,0);
   }else{
-    led.setColor(0,255,255);
+    led.setColor(255,0,255);
   }
   res.send(status);
 });
