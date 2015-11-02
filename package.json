@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "express": "^4.13.3",
-    "webduino-js": "^0.2.7"
+    "webduino-js": "^0.2.7",
+    "body-parser": "^1.14.1"
   }
 }

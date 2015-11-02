@@ -2,8 +2,13 @@ var express = require('express');
 var webduino = require('webduino-js');
 var board, led;
 var app = express();
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+app.use(bodyParser.json());
 
-board = new webduino.WebArduino('你的 device id');
+board = new webduino.WebArduino('你的 Device Id');
 board.on(webduino.BoardEvent.READY, function () {
   led = new webduino.module.RGBLed(board, board.getDigitalPin(6)
                                     , board.getDigitalPin(7)
@@ -11,8 +16,8 @@ board.on(webduino.BoardEvent.READY, function () {
   led.setColor(0,0,255);
 });
 
-app.get('/', function (req, res) {
-  console.log(req.query.status);
+app.post('/', function (req, res) {
+  console.log(req);
   var status = req.query.status;
   if(status == "ok"){
     led.setColor(255,255,255);
