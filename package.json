@@ -1,0 +1,13 @@
+{
+  "name": "webWhistle",
+  "version": "0.0.1",
+  "description": "webduino測試警示燈",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "webduino-js": "^0.2.7"
+  }
+}

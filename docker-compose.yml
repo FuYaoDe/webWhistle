@@ -1,0 +1,8 @@
+web:
+  image: iojs:2.3.4
+  volumes:
+    - .:/app
+  working_dir: /app
+  ports:
+    - "3000:3000"
+  command: "/bin/bash -c 'npm start'"
