@@ -17,8 +17,8 @@ board.on(webduino.BoardEvent.READY, function () {
 });
 
 app.post('/', function (req, res) {
-  console.log(req.build.status);
-  var status = req.build.status;
+  console.log(req.body.build.status);
+  var status = req.body.build.status;
   if(status == "SUCCESS"){
     led.setColor(255,255,255);
   }else if(status == "FAILURE"){
