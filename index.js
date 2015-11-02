@@ -17,11 +17,11 @@ board.on(webduino.BoardEvent.READY, function () {
 });
 
 app.post('/', function (req, res) {
-  console.log(req);
-  var status = req.query.status;
-  if(status == "ok"){
+  console.log(req.build.status);
+  var status = req.build.status;
+  if(status == "SUCCESS"){
     led.setColor(255,255,255);
-  }else if(status == "fail"){
+  }else if(status == "FAILURE"){
     led.setColor(255,255,0);
   }else{
     led.setColor(255,0,255);
