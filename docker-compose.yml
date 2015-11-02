@@ -5,4 +5,4 @@ web:
   working_dir: /app
   ports:
     - "3000:3000"
-  command: "/bin/bash -c 'npm start'"
+  command: "/bin/bash -c 'npm i && npm start'"
