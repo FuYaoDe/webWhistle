@@ -2,9 +2,9 @@
 
 使用webduino 仿製 Yahoo CI Build 氣球燈
 
-Yahoo 
+Yahoo 的燈
+<img src="http://giant.gfycat.com/FrayedHarmlessFlycatcher.gif">
 https://www.youtube.com/watch?v=2ygPkb8KW70&feature=youtu.be&t=3m4s
-
 
 ## Demo
 <img src="http://giant.gfycat.com/HilariousFreshAntarcticgiantpetrel.gif">
